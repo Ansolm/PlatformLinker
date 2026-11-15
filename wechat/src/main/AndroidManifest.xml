@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.iwdael.platformlinker.wechat">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <queries>
         <package android:name="com.tencent.mm" />
@@ -18,8 +17,8 @@
             android:value="${wechat_id}" />
 
         <provider
-            android:name="com.iwdael.platformlinker.WechatPlatformContentProvider"
-            android:authorities="com.iwdael.platformlinker.WechatPlatformContentProvider" />
+            android:name="com.ansolm.platformlinker.WechatPlatformContentProvider"
+            android:authorities="com.ansolm.platformlinker.WechatPlatformContentProvider" />
         <activity
             android:name="${app_package}.wxapi.WXEntryActivity"
             android:exported="true"

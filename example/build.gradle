@@ -4,23 +4,25 @@ plugins {
 }
 apply from: './../config.gradle'
 android {
+    namespace 'com.ansolm.platformlinker.example'
 
-    compileSdkVersion df.compileSdk
+    compileSdk = 37
 
     defaultConfig {
-        applicationId "com.iwdael.platformlinker"
-        minSdkVersion df.minSdk
-        targetSdkVersion df.targetSdk
+        applicationId "com.ansolm.platformlinker.example"
+        minSdk = 21
+        targetSdk = 37
         versionCode df.versionCode
         versionName df.versionName
+        manifestPlaceholders = [tencent_appid: project.findProperty('tencent_appid') ?: '1234567890']
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = "17"
     }
 }
 

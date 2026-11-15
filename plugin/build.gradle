@@ -6,7 +6,7 @@ plugins {
 apply from: './../config.gradle'
 
 dependencies {
-    implementation "com.android.tools.build:gradle:4.0.2"
+    implementation "com.android.tools.build:gradle:9.5.1"
 }
 
 afterEvaluate {
@@ -14,7 +14,7 @@ afterEvaluate {
         publications {
             EC(MavenPublication) {
                 from components.java
-                groupId = "com.iwdael.platformlinker"
+                groupId = "com.ansolm.platformlinker"
                 artifactId = "plugin"
                 version = "0.0.10"
             }

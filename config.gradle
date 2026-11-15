@@ -1,8 +1,8 @@
 ext {
     df = [
-            'compileSdk' : 32,
-            'targetSdk'  : 32,
-            'minSdk'     : 19,
+            'compileSdk' : 37,
+            'targetSdk'  : 37,
+            'minSdk'     : 21,
             'versionCode': 1,
             'versionName': '1.0',
     ]
